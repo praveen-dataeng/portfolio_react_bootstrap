@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/header/Header';
+import NavBar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Skills from './components/skills/Skills';
@@ -10,12 +11,13 @@ import Footer from './components/footer/Footer';
 const App = () => {
   return (
     <>
-    <Header/>
-    <About/>
-    <Experience/>
-    <Skills/>
-    <Projects/>
-    <Footer/>    
+      <Header/>
+      <NavBar/>
+      <About/>
+      <Experience/>
+      <Skills/>
+      <Projects/>
+      <Footer/>    
     </>
   )
 }
