@@ -1,0 +1,11 @@
+#about {
+    height:100vh;
+}
+hr {
+    width: 14rem;
+    font-size:large;
+    margin-left: 40%;
+    color: linear-gradient(45deg, transparent,rgba(136, 4, 136, 0),transparent);
+    display:grid;
+    place-items: center;    
+}

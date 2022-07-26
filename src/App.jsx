@@ -1,5 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './index.css';
 import React from 'react';
 import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
@@ -10,17 +9,22 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
+// Bootstrap Imports
+import Stack from 'react-bootstrap/Stack';
+
 const App = () => {
   return (
     <>
-      <Header/>
-      <Contact/>
-      <Navs/>
-      <About/>
-      <Experience/>
-      <Skills/>
-      <Projects/>
-      <Footer/>    
+    <Stack className='container' gap={5}>        
+        <div><Header/></div>
+        <div><Navs/></div>       
+        <div><About/></div>        
+        <div><Experience/></div>
+        <div><Skills/></div>
+        <div><Projects/></div>
+        <div><Contact/></div>
+        <div><Footer/></div>
+    </Stack>   
     </>
   )
 }
