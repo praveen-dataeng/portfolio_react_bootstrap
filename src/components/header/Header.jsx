@@ -3,7 +3,7 @@ import CTA from './CTA';
 import Socials from './Socials';
 import LogoImage from '../../assets/images/logo.png';
 // React-icons
-import {AiFillDownCircle} from 'react-icons/ai'
+import {BsArrowDownCircleFill} from 'react-icons/bs'
 import './header.css';
 
 // TypeWriting effect
@@ -77,7 +77,7 @@ const Header = () => {
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip}
                 >
-                  <Button href="#contact" variant="outline-dark"><AiFillDownCircle/></Button>
+                  <Button href="#contact" variant="dark"><BsArrowDownCircleFill/></Button>
                 </OverlayTrigger>                   
                 </div>
               </div>

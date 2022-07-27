@@ -4,7 +4,7 @@ import './navbar.css';
 // React-Icons
 import {AiFillHome, AiFillContacts} from 'react-icons/ai';
 import {BsPersonCircle} from 'react-icons/bs';
-import {FaNetworkWired} from 'react-icons/fa';
+import {FaNetworkWired, FaGraduationCap} from 'react-icons/fa';
 import {GiSkills} from 'react-icons/gi';
 import {ImOffice} from 'react-icons/im';
 
@@ -29,6 +29,8 @@ const Navs = () => {
                             
                 <a href='#projects' onClick = {() => setactiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><ImOffice/></a>
                             
+                <a href='#resume' className={activeNav === '#resume' ? 'active' : ''} onClick={() => setactiveNav('#resume')}><FaGraduationCap /></a>
+                
                 <a href='#contact' className={activeNav === '#contact' ? 'active' : ''} onClick={() => setactiveNav('#contact')}><AiFillContacts/></a>
               
           </nav>

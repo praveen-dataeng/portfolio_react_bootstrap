@@ -1,5 +1,5 @@
 import {React, useState, useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import './contact.css';
 
 // Reacticons
@@ -7,6 +7,7 @@ import {FaWhatsapp} from 'react-icons/fa';
 import {MdAlternateEmail} from 'react-icons/md';
 import {SiMinutemailer} from 'react-icons/si';
 import {GiBroom} from 'react-icons/gi';
+import {BsFillArrowUpCircleFill} from 'react-icons/bs'
 
 // Bootstrap imports
 import Button from 'react-bootstrap/Button';
@@ -16,22 +17,35 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import Modal from 'react-bootstrap/Modal';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 const Contact = () => {
-  
-  // emailJS
-  const form = useRef();
+  // Moodal option
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // tooltip Hover
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      Scroll Up
+    </Tooltip>
+  );
+  // // emailJS
+  // const form = useRef();
 
-    emailjs.sendForm('service_edas6eb', 'template_s3d7odd', form.current, 'HNR_hNuTHAgBydb6b')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('service_edas6eb', 'template_s3d7odd', form.current, 'HNR_hNuTHAgBydb6b')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // };
 
   // Form Validation checking
   const [validated, setValidated] = useState(false);
@@ -65,7 +79,29 @@ const Contact = () => {
                       <Card.Text className='text-light'>
                         Quicker & you may get faster response compare to mail
                       </Card.Text>
-                      <Button variant="outline-success" href='https://wa.me/919141120530' target='_blank'><FaWhatsapp/></Button>
+                      <Button variant="outline-success" onClick={handleShow}><FaWhatsapp/></Button>
+                      {/* Whatsapp MOODAL Section STARTS */}
+                      <Modal
+                        show={show}
+                        onHide={handleClose}
+                        backdrop="static"
+                        keyboard={false}
+                      >
+                        <Modal.Header closeButton>
+                          <Modal.Title>WhatsApp</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          Your about to leave the current page are you sure..?
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <Button variant="secondary" onClick={handleClose}>
+                            Close
+                          </Button>
+                          <Button variant="primary" href='https://wa.me/919141120530'>Whatsapp Now</Button>
+                        </Modal.Footer>
+                      </Modal>
+                      {/* MOODAL section ENDS */}
+
                   </Card.Body>
                     {/* EMAIL */}
                     <Card.Body className='bg-dark'>
@@ -74,7 +110,28 @@ const Contact = () => {
                         Please use this only to share your thoughts & feedback..!
                         for Sales & other queries use Contact me form..
                       </Card.Text>
-                      <Button variant="outline-success" href='mailto:praveen.dataengbng@gmail.com'><MdAlternateEmail /></Button>
+                      <Button variant="outline-success" onClick={handleShow}><MdAlternateEmail /></Button>
+                      {/*Email MOODAL Section STARTS */}
+                      <Modal
+                        show={show}
+                        onHide={handleClose}
+                        backdrop="static"
+                        keyboard={false}
+                      >
+                        <Modal.Header closeButton>
+                          <Modal.Title>Email</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          Your about to leave the current page are you sure..?
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <Button variant="secondary" onClick={handleClose}>
+                            Close
+                          </Button>
+                          <Button variant="primary" href='mailto:praveen.dataengbng@gmail.com'>Email now</Button>
+                        </Modal.Footer>
+                      </Modal>
+                      {/* MOODAL section ENDS */}
                     </Card.Body>
                 </Card>
             </Col>
@@ -126,9 +183,22 @@ const Contact = () => {
                     <Button variant="outline-success" type='submit'><SiMinutemailer/></Button>{' '}
                     <Button variant="outline-secondary" type="reset" ><GiBroom/></Button>{' '}
                 </Stack>                
-              </Form>        
+              </Form>
+              <div class="position-relative">
+                  <div class="position-absolute bottom-0 end-0">
+                  <OverlayTrigger
+                    placement="right"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip}
+                  >
+                    <Button href="#header" variant="primary"><BsFillArrowUpCircleFill/></Button>
+                  </OverlayTrigger>                         
+                  </div>  
+              </div>
+              
             </Col>
           </Row>
+          
         </Container>
     </section>
     </>
