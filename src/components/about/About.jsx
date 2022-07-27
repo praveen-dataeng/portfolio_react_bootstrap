@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 // import CardGroup from 'react-bootstrap/CardGroup';
 import Figure from 'react-bootstrap/Figure';
 import Button from 'react-bootstrap/Button';
-import MyImage from '../../assets/images/DSC05715.JPG'
+import MyImage from '../../assets/images/myself.JPG'
 
 const About = () => {
   return (

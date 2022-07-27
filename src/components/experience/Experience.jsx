@@ -41,8 +41,7 @@ const Experience = () => {
     <section id='experience'>
       <h5 className='text-center text-white'>Companie worked</h5>    
       <h1 className='text-center text-white'>Experience</h1>
-      <hr />
-      
+      <hr />      
       <Swiper className="container experience__container"
         // install Swiper modules
       modules={[Pagination ]}
