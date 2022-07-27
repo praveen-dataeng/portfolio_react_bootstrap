@@ -60,7 +60,11 @@ const Skills = () => {
                 <Card.Title>Backend Framework Skills</Card.Title>
                 <Card.Text className="text-start text-muted">
                 <Container>
-                <Row>
+                    <Row>
+                      <Col sm={4} lg={5}>Python</Col>
+                      <Col sm={8} lg={7}><ProgressBar animated now={75} /></Col>
+                    </Row>
+                    <Row>
                       <Col sm={4} lg={5}>Django</Col>
                       <Col sm={8} lg={7}><ProgressBar animated now={75} /></Col>
                     </Row>

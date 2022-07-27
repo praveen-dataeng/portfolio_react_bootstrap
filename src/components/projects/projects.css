@@ -1,4 +1,7 @@
 #projects {
-    height: 150vh;
-    margin-bottom: 5rem;
+    height: fit-content;
+}
+
+.card-group .card:hover {
+    cursor: pointer;
 }
