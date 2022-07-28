@@ -5,6 +5,7 @@ import Cryptograph from './../../assets/images/cgt.png';
 import ValueC from './../../assets/images/valueC.png';
 
 // Bootstrap Imports
+import Button from 'react-bootstrap/Button';
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';

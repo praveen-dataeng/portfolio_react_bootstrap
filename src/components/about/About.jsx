@@ -22,10 +22,10 @@ const About = () => {
             <Figure id='photo'>
                 <Figure.Image                  
                   width="320"                        
-                  class="rounded-4 figure-img img-fluid rounded"
+                  // className="rounded-4 figure-img img-fluid rounded"
                   alt="Praveen"
                   src={MyImage}
-                  className="shadow-lg p-3 mb-5 bg-warning rounded-4"                  
+                  className="my__profile shadow-lg rounded figure-img img-fluid p-3 mb-5 bg-warning rounded-4"                  
                 />
             </Figure>
         </div>

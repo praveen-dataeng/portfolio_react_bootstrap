@@ -8,7 +8,7 @@ nav {
     position: fixed;
     left: 50%;
     transform: translate(-50%);
-    bottom: 2rem;
+    bottom: 1rem;
     display: flex;
     gap: 1rem;
     border-radius: 3rem;

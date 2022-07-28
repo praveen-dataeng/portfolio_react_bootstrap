@@ -24,7 +24,7 @@
     padding: 2rem;
     border-radius: 2rem;
     user-select: none;
-    color:aliceblue;
+    color:rgb(24, 18, 30);
 }
 
 .companies h2 {
@@ -33,6 +33,6 @@
 }
 
 .companies small {
-    font-size:small;
-    
+    font-size:small;  
 }
+
