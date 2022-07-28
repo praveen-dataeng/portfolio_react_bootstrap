@@ -1,3 +1,54 @@
 #footer {
-    height: 100vh;
+    display:block;
+    height: 65vh;
+    background: linear-gradient(45deg, rgb(255, 0, 212), rgb(71, 7, 174));
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top:7rem;
+}
+
+.footer__logo {
+    color:yellow;
+    font-size: 3rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.footer__logo span {
+    color: crimson
+}
+
+.footer__navlinks a {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer__navlinks a:hover {
+    border: 2px solid wheat;
+    border-radius: 5%;
+    color: crimson;
+    font-size: 1rem;
+}
+
+.footer__social {
+    padding: 0.8rem;
+    margin: 0.8rem;
+    color: blanchedalmond;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer__copyright {
+    color:aliceblue;
+}
+
+.footer__copyright p {
+    color: yellow;
+}
+
+.footer__copyright span {
+    color:crimson
 }

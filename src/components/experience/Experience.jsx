@@ -5,7 +5,6 @@ import Cryptograph from './../../assets/images/cgt.png';
 import ValueC from './../../assets/images/valueC.png';
 
 // Bootstrap Imports
-import Button from 'react-bootstrap/Button';
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
@@ -20,9 +19,9 @@ import 'swiper/css/scrollbar';
 // Companies details as Array
 const data = [
   {
-    logo : IBM,
-    name : "IBM India Pvt., Ltd.,",
-    experience : "Worked as Mainframe Engineer"
+    logo  : ValueC,
+    name  : "Value C consulting Services Pvt., Ltd.,",
+    experience  : "Woking as Senior Web Developer",
   },
   {
     logo : Cryptograph,
@@ -30,10 +29,10 @@ const data = [
     experience : "Worked as ETL Engineer"
   },
   {
-    logo  : ValueC,
-    name  : "Value C consulting Services Pvt., Ltd.,",
-    experience  : "Woking as Senior Web Developer",
-  }
+    logo : IBM,
+    name : "IBM India Pvt., Ltd.,",
+    experience : "Worked as Mainframe Engineer"
+  },  
 ]
 
 const Experience = () => {

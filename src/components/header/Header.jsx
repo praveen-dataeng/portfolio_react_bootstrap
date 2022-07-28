@@ -77,7 +77,7 @@ const Header = () => {
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip}
                 >
-                  <Button href="#contact" variant="dark"><BsArrowDownCircleFill/></Button>
+                  <Button href="#footer" variant="dark"><BsArrowDownCircleFill/></Button>
                 </OverlayTrigger>                   
                 </div>
               </div>

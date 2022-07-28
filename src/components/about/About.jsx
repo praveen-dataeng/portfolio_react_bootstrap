@@ -49,7 +49,7 @@ const About = () => {
               <Card.Body>
                 <Card.Title className='mark'>Clients</Card.Title>
                 <Card.Text className='small text-muted'>
-                  Worked with 10+ cliets.
+                  Worked with 5+ clients.
                 </Card.Text>
               </Card.Body>
             </Card>

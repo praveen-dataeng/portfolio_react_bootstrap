@@ -1,4 +1,4 @@
-import {React, useState, useRef } from 'react';
+import {React, useState } from 'react';
 // import emailjs from 'emailjs-com';
 import './contact.css';
 
@@ -33,19 +33,7 @@ const Contact = () => {
       Scroll Up
     </Tooltip>
   );
-  // // emailJS
-  // const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_edas6eb', 'template_s3d7odd', form.current, 'HNR_hNuTHAgBydb6b')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
 
   // Form Validation checking
   const [validated, setValidated] = useState(false);
@@ -97,7 +85,7 @@ const Contact = () => {
                           <Button variant="secondary" onClick={handleClose}>
                             Close
                           </Button>
-                          <Button variant="primary" href='https://wa.me/919141120530'>Whatsapp Now</Button>
+                          <Button variant="primary" href='https://wa.me/919141120530' target='_blank'>Whatsapp Now</Button>
                         </Modal.Footer>
                       </Modal>
                       {/* MOODAL section ENDS */}
@@ -110,28 +98,7 @@ const Contact = () => {
                         Please use this only to share your thoughts & feedback..!
                         for Sales & other queries use Contact me form..
                       </Card.Text>
-                      <Button variant="outline-success" onClick={handleShow}><MdAlternateEmail /></Button>
-                      {/*Email MOODAL Section STARTS */}
-                      <Modal
-                        show={show}
-                        onHide={handleClose}
-                        backdrop="static"
-                        keyboard={false}
-                      >
-                        <Modal.Header closeButton>
-                          <Modal.Title>Email</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                          Your about to leave the current page are you sure..?
-                        </Modal.Body>
-                        <Modal.Footer>
-                          <Button variant="secondary" onClick={handleClose}>
-                            Close
-                          </Button>
-                          <Button variant="primary" href='mailto:praveen.dataengbng@gmail.com'>Email now</Button>
-                        </Modal.Footer>
-                      </Modal>
-                      {/* MOODAL section ENDS */}
+                      <Button variant="outline-success" href='mailto:praveen.dataengbng@gmail.com'><MdAlternateEmail /></Button>              
                     </Card.Body>
                 </Card>
             </Col>
@@ -153,10 +120,9 @@ const Contact = () => {
                   <Form.Label className='text-white'>Enter valid Email ID</Form.Label>
                   <Form.Control
                     required
-                    type='email'
+                    type='email'                    
                     placeholder="name@domain.com"
-                    name='email'
-                    
+                    name='email'                    
                   />
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group><br/>
@@ -164,7 +130,7 @@ const Contact = () => {
                   <Form.Label className='text-white'>Message</Form.Label>
                   <Form.Control
                     required
-                    as="textarea"
+                    as="textarea"                    
                     placeholder="Message me...!"
                     name='message'
                   />
@@ -174,6 +140,7 @@ const Contact = () => {
                 <Form.Group className="mb-3">
                   <Form.Check
                     required
+                    className='text-warning'
                     label="Agree to terms and conditions"
                     feedback="You must agree before submitting."
                     feedbackType="invalid"

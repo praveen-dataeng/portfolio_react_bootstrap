@@ -15,7 +15,7 @@ const Resume = () => {
         <hr />
         <br />
 
-        <Accordion>
+        <Accordion defaultActiveKey="0">
             {/* EDUCATION Details */}
             <Accordion.Item eventKey="0">
                 <Accordion.Header>Education</Accordion.Header>

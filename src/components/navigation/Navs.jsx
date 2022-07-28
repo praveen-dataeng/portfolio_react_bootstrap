@@ -8,13 +8,9 @@ import {FaNetworkWired, FaGraduationCap} from 'react-icons/fa';
 import {GiSkills} from 'react-icons/gi';
 import {ImOffice} from 'react-icons/im';
 
-// Bootstrap imports
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-
-
 const Navs = () => {
+
+
   const [activeNav, setactiveNav] = useState('#')
   return (
     <>
@@ -32,7 +28,6 @@ const Navs = () => {
                 <a href='#resume' className={activeNav === '#resume' ? 'active' : ''} onClick={() => setactiveNav('#resume')}><FaGraduationCap /></a>
                 
                 <a href='#contact' className={activeNav === '#contact' ? 'active' : ''} onClick={() => setactiveNav('#contact')}><AiFillContacts/></a>
-              
           </nav>
     </>
   );
