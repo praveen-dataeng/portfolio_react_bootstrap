@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio_react_bootstrap/static/css/main.8475cb52.css",
+    "main.js": "/portfolio_react_bootstrap/static/js/main.4c4b92cf.js",
+    "static/media/myself.JPG": "/portfolio_react_bootstrap/static/media/myself.52000a8a263ae777dac1.JPG",
+    "static/media/frontEnd.jpg": "/portfolio_react_bootstrap/static/media/frontEnd.0a4893421f4eb80a395c.jpg",
+    "static/media/database.jpg": "/portfolio_react_bootstrap/static/media/database.1588126508041e13f437.jpg",
+    "static/media/fullstack.jpg": "/portfolio_react_bootstrap/static/media/fullstack.10415744af63cfffdcf2.jpg",
+    "static/media/reference.pdf": "/portfolio_react_bootstrap/static/media/reference.c51f5e47e47164e0976a.pdf",
+    "static/media/discord.jpg": "/portfolio_react_bootstrap/static/media/discord.79da4a2690846a72fb79.jpg",
+    "static/media/loanapp.jpeg": "/portfolio_react_bootstrap/static/media/loanapp.9d2192bef44193c9afbe.jpeg",
+    "static/media/logo.png": "/portfolio_react_bootstrap/static/media/logo.8f9442124b2a787982e8.png",
+    "static/media/music.png": "/portfolio_react_bootstrap/static/media/music.399907d11f6e24351a25.png",
+    "static/media/deeplearning.jpg": "/portfolio_react_bootstrap/static/media/deeplearning.8f2aa53bd8ff6a0ead90.jpg",
+    "static/media/realestate.jpg": "/portfolio_react_bootstrap/static/media/realestate.b9d0de846adcf22c63c1.jpg",
+    "static/media/hike.png": "/portfolio_react_bootstrap/static/media/hike.e91bd4761165d21acd24.png",
+    "static/media/taxi.png": "/portfolio_react_bootstrap/static/media/taxi.8a510bf902b68342d210.png",
+    "static/media/cgt.png": "/portfolio_react_bootstrap/static/media/cgt.467410cbc51553babcad.png",
+    "static/media/valueC.png": "/portfolio_react_bootstrap/static/media/valueC.98a34879ef2b87d95995.png",
+    "index.html": "/portfolio_react_bootstrap/index.html",
+    "main.8475cb52.css.map": "/portfolio_react_bootstrap/static/css/main.8475cb52.css.map",
+    "main.4c4b92cf.js.map": "/portfolio_react_bootstrap/static/js/main.4c4b92cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8475cb52.css",
+    "static/js/main.4c4b92cf.js"
+  ]
+}
